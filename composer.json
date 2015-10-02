@@ -1,0 +1,22 @@
+{
+    "name": "ws/android",
+    "description": "Webservice android",
+    "authors": [
+        {
+            "name": "Filipe Shigueru",
+            "email": "fshigueru@yahoo.com.br"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+       "silex/silex": "~1.3",
+        "symfony/serializer": "^3.0@dev",
+        "symfony/property-access": "^3.0@dev",
+        "doctrine/dbal": "~2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Entity\\": "web/entity/"
+        }
+    }
+}
