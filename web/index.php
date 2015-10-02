@@ -22,16 +22,38 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
     ),
 ));
 
+
+
+$app->register(new Silex\Provider\TwigServiceProvider(), array(
+    'twig.path' => __DIR__.'/views',
+));
+
+$app['twig'] = $app->share($app->extend('twig', function($twig, $app) {
+    $twig->addFunction(new \Twig_SimpleFunction('asset', function ($asset) {
+        // implement whatever logic you need to determine the asset path
+
+        return sprintf("http://{$_SERVER['HTTP_HOST']}/%s", ltrim($asset, '/'));
+    }));
+
+    return $twig;
+}));
+
 $encoders = array(new XmlEncoder(), new JsonEncoder());
 $normalizers = array(new ObjectNormalizer());
 $serializer = new Serializer($normalizers, $encoders);
 $response = new Response();
 
+
+$app->get('/publicacoes/listar', function () use ($app,$serializer) {
+    return $app['twig']->render('/publicacao/index.twig');
+});
+
+
 /**
  * Recupera todos os usuários
  * Method GET
  */
-$app->get('/usuarios', function () use ($app,$serializer,$response) {
+$app->get('/ws/usuarios', function () use ($app,$serializer,$response) {
 
     $sql = "SELECT * FROM usuario";
     $usuarios = $app['db']->fetchAll($sql);
@@ -47,7 +69,7 @@ $app->get('/usuarios', function () use ($app,$serializer,$response) {
  * Autentica os usuários
  * Method POST
  */
-$app->post('/usuario/auth', function (Request $request) use ($app,$serializer,$response) {
+$app->post('/ws/usuario/auth', function (Request $request) use ($app,$serializer,$response) {
     $usuario = new Usuario($request->get('login'),$request->get('senha'));
 
     $sql = "SELECT * FROM usuario WHERE login = ? AND senha = ?";
@@ -68,7 +90,7 @@ $app->post('/usuario/auth', function (Request $request) use ($app,$serializer,$r
  * Recupera todos as publicações
  * Method GET
  */
-$app->get('/publicacoes', function () use ($app,$serializer,$response) {
+$app->get('/ws/publicacoes', function () use ($app,$serializer,$response) {
 
     $sql = "SELECT publicacao.*, usuario.nome FROM publicacao INNER JOIN usuario ON usuario.id = publicacao.usuario_id";
     $publicacoes = $app['db']->fetchAll($sql);
@@ -84,7 +106,7 @@ $app->get('/publicacoes', function () use ($app,$serializer,$response) {
  * Persiste publicação
  * Method POST
  */
-$app->post('/publicacao/save', function (Request $request) use ($app,$serializer,$response) {
+$app->post('/ws/publicacao/save', function (Request $request) use ($app,$serializer,$response) {
 
     $publicacao = new Publicacao();
     $publicacao->setUsuarioId($request->get('usuarioId'));
