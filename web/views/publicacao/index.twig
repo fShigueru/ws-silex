@@ -14,7 +14,7 @@
             $interpolateProvider.startSymbol("[[").endSymbol("]]");
         });
         app.controller('publicacoesJson', function($scope, $http) {
-            $http.get("http://ws.dev/ws/publicacoes").success(function(response) {
+            $http.get("http://54.232.209.45/ws/publicacoes").success(function(response) {
                $scope.publicacoes = response;
                 $scope.app = new Date();
             });

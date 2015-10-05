@@ -15,14 +15,13 @@ $app['debug'] = true;
 $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
     'db.options' => array(
         'driver' => 'pdo_mysql',
-        'dbhost' => 'localhost',
-        'dbname' => 'ws',
-        'user' => 'root',
+        'dbhost' => '',
+        'host' => '',
+        'dbname' => '',
+        'user' => '',
         'password' => '',
     ),
 ));
-
-
 
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/views',
@@ -50,7 +49,7 @@ $app->get('/publicacoes/listar', function () use ($app,$serializer) {
 
 
 /**
- * Recupera todos os usuários
+ * Recupera todos os usuÃ¡rios
  * Method GET
  */
 $app->get('/ws/usuarios', function () use ($app,$serializer,$response) {
@@ -66,7 +65,7 @@ $app->get('/ws/usuarios', function () use ($app,$serializer,$response) {
 });
 
 /**
- * Autentica os usuários
+ * Autentica os usuÃ¡rios
  * Method POST
  */
 $app->post('/ws/usuario/auth', function (Request $request) use ($app,$serializer,$response) {
@@ -76,7 +75,7 @@ $app->post('/ws/usuario/auth', function (Request $request) use ($app,$serializer
     $auth = $app['db']->fetchAssoc($sql, array($usuario->getLogin(), $usuario->getSenha()));
 
     if($auth == null){
-        return new Response('Usuário não existe', 201);
+        return new Response('UsuÃ¡rio nÃ£o existe', 201);
     }
 
     $json = $serializer->serialize($auth, 'json');
@@ -87,12 +86,12 @@ $app->post('/ws/usuario/auth', function (Request $request) use ($app,$serializer
 });
 
 /**
- * Recupera todos as publicações
+ * Recupera todos as publicaÃ§Ãµes
  * Method GET
  */
-$app->get('/ws/publicacoes', function () use ($app,$serializer,$response) {
+$app->get('/ws/publicacoes', function() use ($app,$serializer,$response) {
 
-    $sql = "SELECT publicacao.*, usuario.nome FROM publicacao INNER JOIN usuario ON usuario.id = publicacao.usuario_id";
+    $sql = "SELECT publicacao.*, usuario.nome FROM publicacao INNER JOIN usuario ON usuario.id = publicacao.usuario_id ORDER BY publicacao.id DESC";
     $publicacoes = $app['db']->fetchAll($sql);
     $json = $serializer->serialize($publicacoes, 'json');
 
@@ -103,7 +102,7 @@ $app->get('/ws/publicacoes', function () use ($app,$serializer,$response) {
 });
 
 /**
- * Persiste publicação
+ * Persiste publicaÃ§Ã£o
  * Method POST
  */
 $app->post('/ws/publicacao/save', function (Request $request) use ($app,$serializer,$response) {
