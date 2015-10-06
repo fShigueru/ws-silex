@@ -34,6 +34,7 @@
   </component>
   <component name="FileEditorManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <leaf>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.php">
@@ -51,6 +52,9 @@
         </entry>
       </file>
     </leaf>
+=======
+    <leaf />
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
 =======
     <leaf />
 >>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
@@ -652,6 +656,7 @@
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+<<<<<<< HEAD
       <method />
     </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -660,14 +665,19 @@
     </configuration>
 <<<<<<< HEAD
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+=======
       <method />
     </configuration>
-    <configuration default="true" type="com.intellij.database.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
       <method />
     </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+<<<<<<< HEAD
     <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
       <BehatRunner />
 =======
@@ -675,14 +685,19 @@
       <BehatRunner />
       <method />
     </configuration>
+=======
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+<<<<<<< HEAD
 >>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
       <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+=======
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -695,7 +710,10 @@
       <method />
     </configuration>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list size="0" />
+=======
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
 =======
 >>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
   </component>
@@ -734,11 +752,18 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.89215684" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20042644" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
 =======
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="0" />
     <editor active="false" />
@@ -753,9 +778,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20121029" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8913044" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
 =======
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8913044" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
 >>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
@@ -763,6 +792,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -774,6 +804,9 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
 =======
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -782,6 +815,9 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
+=======
 >>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
     </layout>
   </component>
@@ -804,12 +840,29 @@
     <entry file="file://$PROJECT_DIR$/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+=======
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#210#255#0#PHP" expanded="true" />
             <marker date="1444056118974" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..usuario..." />
             <marker date="1444056118974" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..usuario..." />
             <marker date="1444056118974" expanded="true" signature="-1:-1" placeholder="SELECT publi..publicacao..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#210#255#0#PHP" expanded="true" />
+            <marker date="1444056118974" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..usuario..." />
+            <marker date="1444056118974" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..usuario..." />
+            <marker date="1444056118974" expanded="true" signature="-1:-1" placeholder="SELECT publi..publicacao..." />
+<<<<<<< HEAD
           </folding>
         </state>
       </provider>
@@ -836,19 +889,21 @@
             <marker date="1444056118974" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..usuario..." />
             <marker date="1444056118974" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..usuario..." />
             <marker date="1444056118974" expanded="true" signature="-1:-1" placeholder="SELECT publi..publicacao..." />
+=======
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2397">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#54#99#0#PHP" expanded="true" />
-            <marker date="1444005432457" expanded="true" signature="1622:1643" placeholder="SELECT * FRO..usuario..." />
-            <marker date="1444005432457" expanded="true" signature="2137:2188" placeholder="SELECT * FRO..usuario..." />
-            <marker date="1444005432457" expanded="true" signature="2726:2860" placeholder="SELECT publi..publicacao..." />
+            <element signature="e#210#255#0#PHP" expanded="true" />
+            <marker date="1444056118974" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..usuario..." />
+            <marker date="1444056118974" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..usuario..." />
+            <marker date="1444056118974" expanded="true" signature="-1:-1" placeholder="SELECT publi..publicacao..." />
           </folding>
         </state>
       </provider>
@@ -999,6 +1054,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/ws.sql">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27370304">
           <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
@@ -1017,18 +1073,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3809001">
           <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
+=======
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27370304">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/silex/silex/src/Silex/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33211008">
+          <caret line="173" column="20" selection-start-line="173" selection-start-column="20" selection-end-line="173" selection-end-column="20" />
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/vendor/silex/silex/src/Silex/Provider/DoctrineServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.90340286">
           <caret line="25" column="29" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="29" />
+=======
+    <entry file="file://$PROJECT_DIR$/web/entity/Publicacao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3809001">
+          <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://D:/workspace/HouseMonitor/src/servlet/MonitorServlet.java">
 =======
@@ -1048,42 +1124,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20526893">
           <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+=======
+    <entry file="file://$PROJECT_DIR$/vendor/silex/silex/src/Silex/Provider/DoctrineServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.90340286">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../vidales/src/Admin/EnderecoBundle/Controller/BairroController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.0526893">
+          <caret line="209" column="10" selection-start-line="209" selection-start-column="10" selection-end-line="209" selection-end-column="10" />
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/../vidales/src/Admin/ImovelBundle/Resources/views/Compra/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/../vidales/src/Admin/ImovelBundle/Controller/AluguelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20526893">
+          <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/../vidales/src/Admin/CommonBundle/Resources/views/Elements/menu.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5225027">
           <caret line="28" column="47" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="47" />
+=======
+    <entry file="file://$PROJECT_DIR$/../vidales/src/Admin/ImovelBundle/Resources/views/Compra/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/web-forms.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3329776">
           <caret line="545" column="22" selection-start-line="545" selection-start-column="22" selection-end-line="545" selection-end-column="22" />
+=======
+    <entry file="file://$PROJECT_DIR$/../vidales/src/Admin/CommonBundle/Resources/views/Elements/menu.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5225027">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="47" />
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/web/views/usuario/lista.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.884615">
           <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+=======
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3329776">
+          <caret line="545" column="22" selection-start-line="545" selection-start-column="22" selection-end-line="545" selection-end-column="22" />
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/../../../../Vagrantfile">
 =======
@@ -1097,6 +1216,22 @@
       </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
+=======
+    <entry file="file://$PROJECT_DIR$/web/views/usuario/lista.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.884615">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/usuario/index.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.730769">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding />
+        </state>
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/entity/Usuario.php">
@@ -1118,8 +1253,13 @@
     <entry file="file://$PROJECT_DIR$/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.47339448" vertical-offset="1816" max-vertical-offset="2397">
           <caret line="122" column="6" selection-start-line="122" selection-start-column="6" selection-end-line="122" selection-end-column="6" />
+=======
+        <state vertical-scroll-proportion="-0.26125136">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+>>>>>>> 7d8607038dc640d1d1891c2df200e11fedfafaed
 =======
         <state vertical-scroll-proportion="-0.26125136">
           <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
