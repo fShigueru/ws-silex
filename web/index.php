@@ -1,4 +1,8 @@
 <?php
+/**
+ * http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/data-retrieval-and-manipulation.html
+ * http://silex.sensiolabs.org/
+ */
 require_once __DIR__.'/../vendor/autoload.php';
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -11,14 +15,15 @@ use Entity\Publicacao;
 
 $app = new Silex\Application();
 $app['debug'] = true;
+Request::enableHttpMethodParameterOverride();
 
 $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
     'db.options' => array(
         'driver' => 'pdo_mysql',
-        'dbhost' => '',
-        'host' => '',
-        'dbname' => '',
-        'user' => '',
+        'dbhost' => 'localhost',
+        //'host' => '',
+        'dbname' => 'ws',
+        'user' => 'root',
         'password' => '',
     ),
 ));
@@ -43,7 +48,7 @@ $serializer = new Serializer($normalizers, $encoders);
 $response = new Response();
 
 
-$app->get('/publicacoes/listar', function () use ($app,$serializer) {
+$app->get('/publicacoes/listar', function () use ($app) {
     return $app['twig']->render('/publicacao/index.twig');
 });
 
@@ -109,7 +114,7 @@ $app->post('/ws/publicacao/save', function (Request $request) use ($app,$seriali
 
     $publicacao = new Publicacao();
     $publicacao->setUsuarioId($request->get('usuarioId'));
-    $publicacao->setDescricao($request->get('descricao'));
+    $publicacao->setDescricao(utf8_encode($request->get('descricao')));
     $publicacao->setFotoLocal($request->get('fotoLocal'));
     $publicacao->setFotoWS($request->get('fotoWS'));
 
@@ -119,6 +124,87 @@ $app->post('/ws/publicacao/save', function (Request $request) use ($app,$seriali
             'descricao' => $publicacao->getDescricao(),
             'fotoWS' => $publicacao->getFotoWS(),
             'fotoLocal' => $publicacao->getFotoLocal()
+        ]
+    );
+    $json = null;
+    if($retorno == 1){
+        $json = $serializer->serialize(['retorno' => 1], 'json');
+    }else{
+        $json = $serializer->serialize(['retorno' => 0], 'json');
+    }
+    $response->setStatusCode(200);
+    $response->setContent($json);
+    $response->headers->set('Content-type', 'application/json');
+    return $response;
+});
+
+/**
+ * Excluir publição
+ * Method DELETE
+ */
+$app->delete('/publicacao/', function(Request $request) use ($app,$serializer,$response) {
+    $publicacao = $app['db']->delete('publicacao', array('id' => $request->get('id')));
+
+    if($publicacao != 1){
+        $json = $serializer->serialize(['retorno' => 1], 'json');
+        $response->setStatusCode(201);
+        $response->setContent($json);
+        $response->headers->set('Content-type', 'application/json');
+        return $response;
+    }else{
+        return $app->redirect('/publicacoes/listar');
+    }
+});
+
+/**
+ * Cadastrar usuário
+ * Method GET
+ */
+$app->get('/usuario/new', function() use ($app) {
+    return $app['twig']->render('/usuario/index.twig');
+});
+
+/**
+ * Lista de usuários
+ * Method GET
+ */
+$app->get('/usuario/listar', function() use ($app) {
+    return $app['twig']->render('/usuario/lista.twig');
+});
+
+/**
+ * Persiste publicação
+ * Method POST
+ */
+$app->post('/usuario/', function (Request $request) use ($app,$serializer,$response) {
+
+    $usuario = new Usuario($request->get('login'),$request->get('senha'));
+    $usuario->setNome($request->get('nome'));
+
+    $retorno = $app['db']->insert('usuario',
+        [
+            'nome' => $usuario->getNome(),
+            'login' => $usuario->getLogin(),
+            'senha' => $usuario->getSenha()
+        ]
+    );
+
+    return $app->redirect('/usuario/listar');
+});
+
+/**
+ * Persiste publicação WS
+ * Method POST
+ */
+$app->post('/ws/usuario/new', function (Request $request) use ($app,$serializer,$response) {
+    $usuario = new Usuario($request->get('login'),$request->get('senha'));
+    $usuario->setNome($request->get('nome'));
+
+    $retorno = $app['db']->insert('usuario',
+        [
+            'nome' => $usuario->getNome(),
+            'login' => $usuario->getLogin(),
+            'senha' => $usuario->getSenha()
         ]
     );
     $json = null;

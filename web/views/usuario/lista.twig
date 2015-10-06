@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CondoMain usuários</title>
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
+    <script src="{{ asset('assets/js/jquery.js') }}"></script>
+    <script src="{{ asset('assets/js/angular.min.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/js/angular-locale_pt-br.js') }}"></script>
+    <script>
+        var app = angular.module("app", []).config(function($interpolateProvider){
+            $interpolateProvider.startSymbol("[[").endSymbol("]]");
+        });
+        app.controller('usuariosJson', function($scope, $http) {
+            $http.get("http://ws.dev/ws/usuarios").success(function(response) {
+                $scope.publicacoes = response;
+                $scope.app = new Date();
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-12 main">
+            <h1 class="page-header">Usuários</h1>
+            <div class="table-responsive">
+                <table class="table table-striped" ng-controller="usuariosJson">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nome:</th>
+                        <th>Login</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="publicacao in publicacoes">
+                            <td>[[ publicacao.id ]]</td>
+                            <td>[[ publicacao.nome ]]</td>
+                            <td>[[ publicacao.login ]]</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

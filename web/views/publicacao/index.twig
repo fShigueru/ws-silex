@@ -14,7 +14,7 @@
             $interpolateProvider.startSymbol("[[").endSymbol("]]");
         });
         app.controller('publicacoesJson', function($scope, $http) {
-            $http.get("http://54.232.209.45/ws/publicacoes").success(function(response) {
+            $http.get("http://ws.dev/ws/publicacoes").success(function(response) {
                $scope.publicacoes = response;
                 $scope.app = new Date();
             });
@@ -32,8 +32,8 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Publicado por:</th>
-                                <th>Descrição</th>
+                                <th>Publicado por</th>
+                                <th width="30%">Descrição</th>
                                 <th>Foto</th>
                                 <th>Publicaco em</th>
                                 <th>Ações</th>
@@ -44,10 +44,14 @@
                                 <td>[[ publicacao.id ]]</td>
                                 <td>[[ publicacao.nome ]]</td>
                                 <td>[[ publicacao.descricao ]]</td>
-                                <td>[[ publicacao.foto ]]</td>
+                                <td><img src="[[ publicacao.fotoWS ]]" width="150px" class="img-thumbnail" /></td>
                                 <td>[[ publicacao.data_criacao | date:'dd/MM/yy HH:mm' ]]</td>
                                 <td>
-                                    <button class="btn btn-danger">Excluir</button>
+                                    <form action="/publicacao/" method="POST">
+                                        <input type="hidden" id="_method" name="_method" value="DELETE" />
+                                        <input type="hidden" value="[[ publicacao.id ]]" name="id">
+                                        <button class="btn btn-danger">Excluir</button>
+                                    </form>
                                 </td>
                             </tr>
                         </tbody>
